@@ -4,10 +4,7 @@ Za slučajnu promjenljivu iz zadane raspodjele analiziraju se: realizacije sluč
 srednjekvadratna vrijednost, varijansa, medijana, te funkcija raspodjele i funkcija gustine vjerovatnoće
 (numerički i analitički, uz biblioteku `ssp` iz ovog repozitorija).
 
-Rayleigheva raspodjela je urađena u knjizi i u `Primjeri/Kodovi_2.1-2.15.ipynb` / `Kodovi_2.16-2.37.ipynb`
-(programski kodovi 2.8–2.15 i 2.23–2.29). Kodovi su preuzeti odatle, a ostale tri raspodjele su urađene istim postupkom.
-
-| Raspodjela | Parametri (programski kod 2.11) | Colab |
+| Raspodjela | Parametri | Colab |
 |---|---|---|
 | Uniformna | $a=0$, $b=10$ | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/Z1_Uniformna_raspodjela.ipynb) |
 | Normalna (Gaussova) | $a=3$, $\sigma=0.1$ | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/Z2_Normalna_raspodjela.ipynb) |
