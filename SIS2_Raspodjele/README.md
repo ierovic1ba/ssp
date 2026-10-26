@@ -1,15 +1,17 @@
-# Modeli raspodjela vjerovatnoće (poglavlje 2.4)
+# Primjer 2.3: analiza slučajnih promjenljivih u Python okruženju (knjiga, sekcija 2.6, str. 46)
 
-Četiri raspodjele iz poglavlja 2.4 knjige *Slučajni signali i procesi*, svaka prikazana kroz jedan intuitivan eksperiment
-(N = 10 000 ponavljanja), uz poređenje sa teorijom i sa programskim kodovima 2.1–2.4. Koristi se biblioteka `ssp` iz ovog repozitorija.
+Za slučajnu promjenljivu iz zadane raspodjele analiziraju se: realizacije slučajne promjenljive, očekivana vrijednost,
+srednjekvadratna vrijednost, varijansa, medijana, te funkcija raspodjele i funkcija gustine vjerovatnoće
+(numerički i analitički, uz biblioteku `ssp` iz ovog repozitorija).
 
-| Raspodjela | Eksperiment | Colab |
+Rayleigheva raspodjela je urađena u knjizi i u `Primjeri/Kodovi_2.1-2.15.ipynb` / `Kodovi_2.16-2.37.ipynb`
+(programski kodovi 2.8–2.15 i 2.23–2.29). Kodovi su preuzeti odatle, a ostale tri raspodjele su urađene istim postupkom.
+
+| Raspodjela | Parametri (programski kod 2.11) | Colab |
 |---|---|---|
-| Uniformna | bacanje kockice | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/R1_Uniformna_raspodjela.ipynb) |
-| Gaussova | Galtonova daska | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/R2_Gaussova_raspodjela.ipynb) |
-| Rayleigheva | gađanje u metu (pikado) | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/R3_Rayleigheva_raspodjela.ipynb) |
-| Eksponencijalna | radni vijek sijalica | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/R4_Eksponencijalna_raspodjela.ipynb) |
+| Uniformna | $a=0$, $b=10$ | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/Z1_Uniformna_raspodjela.ipynb) |
+| Normalna (Gaussova) | $a=3$, $\sigma=0.1$ | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/Z2_Normalna_raspodjela.ipynb) |
+| Rayleigheva | $\eta=5$ | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/Z3_Rayleigheva_raspodjela.ipynb) |
+| Eksponencijalna | $a=0.25$ (`np.random.exponential(4, N)`) | [otvori](https://colab.research.google.com/github/ierovic1ba/ssp/blob/main/SIS2_Raspodjele/Z4_Eksponencijalna_raspodjela.ipynb) |
 
 U Colabu: `Runtime → Run all`. Prva ćelija sama klonira repozitorij i učita biblioteku `ssp`.
-
-Izvođenja svih formula su u `Raspodjele_vjerovatnoce_izvodjenja.pdf`.
